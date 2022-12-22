@@ -1,4 +1,6 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from "./routes/About"
 
 function App() {
   const title = "NEW BLOG";
@@ -8,6 +10,10 @@ function App() {
         <h1>App Component</h1>
         <h2>{title}</h2>
       </div>
+      <Routes>
+        <Route path="/about" element={About}></Route>
+      </Routes>
+
     </div>
   );
 }
